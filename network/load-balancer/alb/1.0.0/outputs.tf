@@ -22,3 +22,8 @@ output "https_listener_arn" {
   description = "The ARN of the HTTPS listener"
   value       = aws_lb_listener.this_https.arn
 }
+
+output "zone_id" {
+  description = "Canonical hosted zone ID of the load balancer (to be used in a Route 53 Alias record)."
+  value       = aws_lb.this.zone_id
+}
