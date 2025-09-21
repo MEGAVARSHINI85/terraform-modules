@@ -28,6 +28,7 @@ No modules.
 | <a name="input_domain_name"></a> [domain\_name](#input\_domain\_name) | The domain name for the ACM certificate. | `string` | n/a | yes |
 | <a name="input_hosted_private_zone"></a> [hosted\_private\_zone](#input\_hosted\_private\_zone) | The name of the Route53 hosted zone. | `string` | `false` | no |
 | <a name="input_hosted_zone_name"></a> [hosted\_zone\_name](#input\_hosted\_zone\_name) | The name of the hosted zone for the ACM certificate. | `string` | n/a | yes |
+| <a name="input_subject_alternative_names"></a> [subject\_alternative\_names](#input\_subject\_alternative\_names) | A list of subject alternative names for the ACM certificate. | `list(string)` | `[]` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to assign to the ACM certificate. | `map(string)` | n/a | yes |
 
 ## Outputs

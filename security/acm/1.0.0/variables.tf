@@ -18,3 +18,9 @@ variable "tags" {
   description = "A map of tags to assign to the ACM certificate."
   type        = map(string)
 }
+
+variable "subject_alternative_names" {
+  description = "A list of subject alternative names for the ACM certificate."
+  type        = list(string)
+  default     = []
+}
